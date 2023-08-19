@@ -320,7 +320,75 @@
           </div>
         </div>
         <!-- calculation section -->
-        <div></div>
+        <div class="mt-[110px] lg:ml-5">
+          <div class="bg-[#FFF] w-[342px] h-[148px] rounded-lg">
+            <p class="font-bold text-[20px] mb-5 p-2">Have coupon?</p>
+            <div class="ml-5">
+              <input
+                type="text"
+                placeholder="Coupon code"
+                class="p-5 h-[56px] border-2 rounded-lg"
+              />
+              <button class="btn bg-[#E527B2] h-[56px] text-white">
+                Apply
+              </button>
+            </div>
+          </div>
+          <!-- section calculation -->
+          <div class="lg:h-[316px] w-[342px] bg-[#FFF] mt-5 rounded-lg">
+            <!-- list items  -->
+            <div class="p-5">
+              <li class="font-bold">1. Home Cooker</li>
+              <li class="font-bold">2. Sports Cates</li>
+              <li class="font-bold">3. Home Cooker</li>
+            </div>
+            <hr class="w-[90%] mx-auto" />
+
+            <!-- price section -->
+            <div class="p-5">
+              <p class="font-bold">
+                Total Price: <span class="text-gray-500">257.00 TK</span>
+              </p>
+              <p class="font-bold">
+                Discount: <span class="text-gray-500">51.40 TK</span>
+              </p>
+              <p class="font-bold">
+                Total: <span class="text-gray-500">205.60 TK</span>
+              </p>
+            </div>
+            <hr class="w-[90%] mx-auto" />
+          </div>
+          <!-- make payment button  -->
+          <div class="mt-[-10px] flex lg:justify-center">
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              class="btn w-[294px] bg-[#E527B2] text-white"
+              onclick="my_modal_1.showModal()"
+            >
+              Make Purchase
+            </button>
+            <dialog id="my_modal_1" class="modal">
+              <form
+                method="dialog"
+                class="modal-box flex flex-col justify-center mx-auto text-center"
+              >
+                <img
+                  src="images/congo.png"
+                  alt=""
+                  class="w-[160px] h-[160px] flex justify-center mx-auto mt-10"
+                />
+                <h3 class="font-bold text-[35px]">Congratulations</h3>
+                <p class="py-4">Your Purchase the product</p>
+                <div class="modal-action">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="mx-auto btn bg-[#E527B2] w-[180px] text-white">
+                    Go Home
+                  </button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
       </div>
     </section>
     <script src="scripts/script.js"></script>
