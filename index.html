@@ -50,7 +50,10 @@
             <h3 class="font-bold text-3xl mb-9">Kitchenware</h3>
             <!-- card box  -->
             <div class="flex flex-col lg:flex-row">
-              <div class="card w-72 bg-base-100 shadow-xl">
+              <div
+                class="card w-72 bg-base-100 shadow-xl cursor-pointer"
+                onclick="itemHandler(this)"
+              >
                 <figure class="px-10 pt-10 bg-[#F8F8F8] m-5">
                   <img
                     src="images/prod1.png"
@@ -93,7 +96,10 @@
                 </div>
               </div>
 
-              <div class="card w-72 bg-base-100 shadow-xl lg:ml-2">
+              <div
+                class="card w-72 bg-base-100 shadow-xl lg:ml-2 cursor-pointer"
+                onclick="itemHandler(this)"
+              >
                 <figure class="px-10 pt-10 bg-[#F8F8F8] m-5">
                   <img
                     src="images/prod2.png"
@@ -136,7 +142,10 @@
                 </div>
               </div>
 
-              <div class="card w-72 bg-base-100 shadow-xl lg:ml-2">
+              <div
+                class="card w-72 bg-base-100 shadow-xl lg:ml-2 cursor-pointer"
+                onclick="itemHandler(this)"
+              >
                 <figure class="px-10 pt-10 bg-[#F8F8F8] m-5">
                   <img
                     src="images/prod3.png"
@@ -187,7 +196,10 @@
               <h3 class="font-bold text-3xl mb-9">Sportswear</h3>
               <!-- card box  -->
               <div class="flex flex-col lg:flex-row">
-                <div class="card w-72 bg-base-100 shadow-xl">
+                <div
+                  class="card w-72 bg-base-100 shadow-xl cursor-pointer"
+                  onclick="itemHandler(this)"
+                >
                   <figure class="px-10 pt-10 bg-[#F8F8F8] m-5">
                     <img
                       src="images/prod4.png"
@@ -230,7 +242,10 @@
                   </div>
                 </div>
 
-                <div class="card w-72 bg-base-100 shadow-xl lg:ml-2">
+                <div
+                  class="card w-72 bg-base-100 shadow-xl lg:ml-2 cursor-pointer"
+                  onclick="itemHandler(this)"
+                >
                   <figure class="px-10 pt-10 bg-[#F8F8F8] m-5">
                     <img
                       src="images/prod5.png"
@@ -273,7 +288,10 @@
                   </div>
                 </div>
 
-                <div class="card w-72 bg-base-100 shadow-xl lg:ml-2">
+                <div
+                  class="card w-72 bg-base-100 shadow-xl lg:ml-2 cursor-pointer"
+                  onclick="itemHandler(this)"
+                >
                   <figure class="px-10 pt-10 bg-[#F8F8F8] m-5">
                     <img
                       src="images/prod6.png"
@@ -329,7 +347,7 @@
                 placeholder="Coupon code"
                 class="p-5 h-[56px] border-2 rounded-lg"
               />
-              <button class="btn bg-[#E527B2] h-[56px] text-white">
+              <button class="btn bg-[#E527B2] h-[56px] text-white" disabled>
                 Apply
               </button>
             </div>
@@ -337,11 +355,7 @@
           <!-- section calculation -->
           <div class="lg:h-[316px] w-[342px] bg-[#FFF] mt-5 rounded-lg">
             <!-- list items  -->
-            <div class="p-5">
-              <li class="font-bold">1. Home Cooker</li>
-              <li class="font-bold">2. Sports Cates</li>
-              <li class="font-bold">3. Home Cooker</li>
-            </div>
+            <div class="p-5" id="list_products"></div>
             <hr class="w-[90%] mx-auto" />
 
             <!-- price section -->
@@ -364,6 +378,7 @@
             <button
               class="btn w-[294px] bg-[#E527B2] text-white"
               onclick="my_modal_1.showModal()"
+              disabled
             >
               Make Purchase
             </button>
