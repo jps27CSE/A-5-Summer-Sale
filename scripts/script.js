@@ -28,8 +28,6 @@ function itemHandler(data) {
   if (total_Price >= 200) {
     applyButton.disabled = false;
   }
-
-  const discountPriceElement = document.getElementById("discount_price");
 }
 
 function coupon_button_click() {
